@@ -1,18 +1,20 @@
 
 header {
     margin: auto;
-    font-size: 28px;
-    text-align: center;
-    height: 40px;
+    font-size: 34px;
+    height: 46px;
     width: 99%;
     position: fixed;
     top: 0px;
     color:white;
-    background-color:rgb(79, 115, 116);
+    background-color:#66bb6a;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 46px;
 }
 
 main {
-    border: 1px rgb(79, 115, 116);
+    border: 1px rgb#66bb6a;
     margin: auto;
     top: 50px;
     text-align: center;
@@ -21,19 +23,18 @@ main {
     width: 100%;
 }
 
-button {
-    margin-top: 15px;
-    width: 120px;
-    height: 40px;
-    border-radius: 4px;
-    background-color: rgb(79, 115, 116);
-    font-size: 18px;
-    color: white;    
-}
-
-button:hover {
-    background-color: whitesmoke;
-    color: rgb(79, 115, 116);
+.button {    
+    width: 150px;
+    height: 55px;
+    border: none;
+    border-radius: .50rem;
+    background-color: #66bb6a;
+    font-size: 26px;
+    margin: 40px 5px;  
+    display: inline-block;
+    text-decoration: none;
+    color:white;    
+    cursor: pointer;
 }
 
 .container {
@@ -45,36 +46,49 @@ button:hover {
 
 .card {
     margin: 10px;
-    border: 1px blue dotted;
+    border: none;
     width : 220px;
     height: 240px;
     display: grid;
+    color: white;
     font-size: 18px;
+    border-radius: .50rem;
+    background-color: #0077c2;
+    transition: 0.5s all;
 }
 
 .word {
     margin: 10px;
-    border: 1px blue dotted;
+    border: none;
     width : 220px;
     height: 50px;
-    display: grid;
+    display: grid;    
+    color: white;
+    font-size: 26px;
+    border-radius: .50rem;
+    background-color: #0077c2;
     text-align: center;
-    font-size: 28px;
+    vertical-align: middle;
+    line-height: 50px;
+    transition: 1s all ease;
 }
 
 .result {
     margin: 10px auto;
     height: 40px;
     width: 300px;
+    font-size: 32px;
+    color:#0077c1;
 }
-
 
 footer {
     bottom: 0px;
-    text-align: center;
-    height: 20px;
+    height: 32px;
     width: 99%;
     position: fixed;
     color:white;
-    background-color:rgb(79, 115, 116);
+    background-color:#66bb6a;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;    
 }

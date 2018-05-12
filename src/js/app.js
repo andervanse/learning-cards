@@ -1,8 +1,6 @@
-
-
 var words, colors, lastType, randomColorIdx, randomWords = [], randomDescriptions = [], usedColorsIdxs = [], currentWordsIdxs = [];
 
-colors = ['rgb(255, 153, 102)', 'rgb(102, 204, 255)', 'rgb(153, 255, 51)', 'rgb(204, 204, 0)'];
+colors = ['rgb(255, 153, 102)', 'rgb(102, 204, 255)', 'rgb(51, 138, 62)', 'rgb(204, 204, 0)'];
 
 init();
 
@@ -23,14 +21,11 @@ function init() {
             idx = getRandomIdxFromArray(currentWordsIdxs, words);
         }
 
-        document.querySelectorAll('div.card').forEach(function (element) {
+        document.querySelectorAll('div.card, div.word').forEach(function (element) {
             updateElement(element);    
             addClickEvent(element);    
-        });
-
-        document.querySelectorAll('div.word').forEach(function (element) {
-            updateElement(element);    
-            addClickEvent(element);    
+            if (element.className === 'word')
+                element.style.border = '4px yellow solid';
         });
     })
     .catch(function(err){
@@ -49,14 +44,12 @@ function getRandomIdxFromArray(array, arrayFrom) {
         randomIdx = getRandomInt(0, arrayFrom.length -1);
     }    
     array.push(randomIdx);
-
     return randomIdx;    
 }
 
 function updateElement(element) {
     element.innerHTML = '';
     element.style.backgroundColor = '';
-
     var randomIdx = -1;
     
     if (element.className === 'word') {
@@ -72,7 +65,6 @@ function updateElement(element) {
 
 function addClickEvent(element) {
     element.addEventListener('click', function (e) {
-
         var id, clickedElem, type, idInt;
         document.querySelector('.result').innerHTML = '';
 
@@ -103,8 +95,25 @@ function addClickEvent(element) {
             clickedElem.style.backgroundColor = colors[randomColorIdx];
         }
 
+        toggleBorder(type); 
         lastType = type;
     });
+}
+
+function toggleBorder(type) {
+    document.querySelectorAll('.card, .word').forEach(function(element) {       
+        if (element.className !== type) {
+            if (element.style.border === '') {
+                if (usedColorsIdxs.length !== colors.length)
+                    element.style.border = '4px yellow solid';
+            } else {
+                element.style.border = '';
+            }
+        } else {
+            element.style.border = '';
+        }        
+    });
+    console.log(usedColorsIdxs);
 }
 
 function isCorrect() {
@@ -137,9 +146,9 @@ function isCorrect() {
 
 document.getElementById('btn-check').addEventListener('click', function(event) {
     if (isCorrect()) {
-        document.querySelector('.result').innerHTML = 'Winner';
+        document.querySelector('.result').innerHTML = 'Winner ;)';
     } else {
-        document.querySelector('.result').innerHTML = 'Try again';
+        document.querySelector('.result').innerHTML = 'Try again :(';
     }
  });
 
