@@ -58,5 +58,95 @@
         "id": "12",
         "word": "toady",
         "definition": "A person who tries to please someone to gain an advantage."
-    }                
+    },
+    {
+        "id": "13",
+        "word": "wound",
+        "definition": "An injury to living tissue caused by a cut, blow, or other impact, typically one in which the skin is cut or broken."
+    },
+    {
+        "id": "15",
+        "word": "confidant",
+        "definition": "Someone to whom private matters are told."
+    },
+    {
+        "id": "16",
+        "word": "forsake",
+        "definition": "Leave someone who needs or counts on you; abandon (someone or something); leave in the lurch."
+    },
+    {
+        "id": "17",
+        "word": "invoice",
+        "definition": "A list of goods sent or services provided, with a statement of the sum due for these; a bill."
+    },
+    {
+        "id": "18",
+        "word": "innocuous",
+        "definition": "Lacking intent or capacity to injure."
+    },
+    {
+        "id": "19",
+        "word": "veritable",
+        "definition": "Being truly so called; real or genuine."
+    },
+    {
+        "id": "20",
+        "word": "pragmatist",
+        "definition": "A person who takes a practical approach to problems."
+    },
+    {
+        "id": "21",
+        "word": "clutch",
+        "definition": "A collection of things or persons to be handled together."
+    },
+    {
+        "id": "22",
+        "word": "ambiguity",
+        "definition": "Unclearness by virtue of having more than one meaning."
+    },
+    {
+        "id": "23",
+        "word": "pedagogue",
+        "definition": "Someone who educates young people."
+    },
+    {
+        "id": "24",
+        "word": "erudite",
+        "definition": "Having or showing profound knowledge."
+    },
+    {
+        "id": "25",
+        "word": "misconception",
+        "definition": "An incorrect assumption."
+    },
+    {
+        "id": "26",
+        "word": "fierce",
+        "definition": "Marked by extreme and violent energy."
+    },
+    {
+        "id": "27",
+        "word": "intrinsically",
+        "definition": "With respect to its inherent nature."
+    },
+    {
+        "id": "28",
+        "word": "assessment",
+        "definition": "The act of judging a person or situation or event."
+    },
+    {
+        "id": "28",
+        "word": "egregious",
+        "definition": "Conspicuously and outrageously bad or reprehensible."
+    },
+    {
+        "id": "29",
+        "word": "revile",
+        "definition": "Spread negative information about."
+    },
+    {
+        "id": "30",
+        "word": "gouge",
+        "definition": "The act of obtaining by coercion or intimidation."
+    }
 ]
